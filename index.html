@@ -862,7 +862,107 @@ footer{
 }
 
 }
+/* =========================
+   MOBILE RESPONSIVE DESIGN
+========================= */
 
+@media (max-width: 768px) {
+
+    body{
+        overflow-x: hidden;
+    }
+
+    section{
+        padding: 60px 5%;
+    }
+
+    h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    h2{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    h3{
+        font-size: 1.2rem;
+    }
+
+    p{
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    /* HERO SECTION */
+
+    .hero,
+    .home,
+    .about,
+    .container,
+    .hero-content{
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .hero img,
+    .home img,
+    .about img,
+    .profile-img{
+        width: 180px;
+        height: 180px;
+        margin: auto;
+    }
+
+    /* EDUCATION CARDS */
+
+    .education-container,
+    .skills-container,
+    .project-container,
+    .certificate-container{
+        grid-template-columns: 1fr;
+    }
+
+    /* SKILL RADAR */
+
+    canvas{
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    /* NAVBAR */
+
+    nav{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li{
+        margin: 10px 0;
+    }
+
+    /* BUTTONS */
+
+    .btn{
+        width: 100%;
+        text-align: center;
+    }
+
+    /* GALLERY */
+
+    .gallery img{
+        width: 100%;
+        height: auto;
+    }
+
+}
 </style>
 </head>
 
