@@ -14,6 +14,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
 <style>
 
+/* =========================
+   GLOBAL
+========================= */
+
 *{
     margin:0;
     padding:0;
@@ -21,14 +25,19 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     scroll-behavior:smooth;
 }
 
+html,body{
+    overflow-x:hidden;
+}
+
 body{
     background:#050505;
     color:white;
     font-family:'Poppins',sans-serif;
-    overflow-x:hidden;
 }
 
-/* SCROLLBAR */
+/* =========================
+   SCROLLBAR
+========================= */
 
 ::-webkit-scrollbar{
     width:8px;
@@ -39,7 +48,9 @@ body{
     border-radius:20px;
 }
 
-/* PARTICLES */
+/* =========================
+   PARTICLES
+========================= */
 
 canvas{
     position:fixed;
@@ -48,7 +59,9 @@ canvas{
     z-index:-1;
 }
 
-/* NAVBAR */
+/* =========================
+   NAVBAR
+========================= */
 
 nav{
     width:100%;
@@ -67,7 +80,7 @@ nav{
     font-size:28px;
     font-family:'Cinzel',serif;
     letter-spacing:3px;
-    color:#ffffff;
+    color:white;
 }
 
 nav ul{
@@ -87,7 +100,9 @@ nav ul li a:hover{
     color:#9c7dff;
 }
 
-/* HERO */
+/* =========================
+   HERO
+========================= */
 
 .hero{
     min-height:100vh;
@@ -95,15 +110,14 @@ nav ul li a:hover{
     justify-content:center;
     align-items:center;
     padding:120px 10% 40px;
-    position:relative;
 }
 
 .hero-content{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    width:100%;
     gap:60px;
+    width:100%;
 }
 
 .left{
@@ -139,9 +153,8 @@ nav ul li a:hover{
     border-radius:40px;
     background:#7f5cff;
     color:white;
-    cursor:pointer;
-    transition:0.4s;
     text-decoration:none;
+    transition:0.4s;
 }
 
 .btn:hover{
@@ -160,7 +173,6 @@ nav ul li a:hover{
     height:450px;
     border-radius:30px;
     overflow:hidden;
-    position:relative;
     background:rgba(255,255,255,0.05);
     backdrop-filter:blur(20px);
     border:1px solid rgba(255,255,255,0.1);
@@ -173,7 +185,9 @@ nav ul li a:hover{
     object-fit:cover;
 }
 
-/* SECTION */
+/* =========================
+   SECTION
+========================= */
 
 section{
     padding:70px 10%;
@@ -182,11 +196,13 @@ section{
 .title{
     font-size:50px;
     font-family:'Cinzel',serif;
-    margin-bottom:60px;
     text-align:center;
+    margin-bottom:50px;
 }
 
-/* ABOUT */
+/* =========================
+   ABOUT
+========================= */
 
 .about-box{
     display:grid;
@@ -198,34 +214,32 @@ section{
     background:rgba(255,255,255,0.05);
     border:1px solid rgba(255,255,255,0.1);
     border-radius:25px;
-    padding:40px;
+    padding:35px;
     backdrop-filter:blur(20px);
     transition:0.4s;
 }
 
-.glass:hover{transform:translateY(-10px);
-    box-shadow:0 0 35px rgba(127,92,255,0.3);}
-   
-/* RADAR UI */
+.glass:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 35px rgba(127,92,255,0.3);
+}
+
+/* =========================
+   RADAR
+========================= */
 
 .radar-subtitle{
     text-align:center;
     color:#bdbdbd;
     margin-top:-20px;
-    margin-bottom:60px;
-    font-size:18px;
+    margin-bottom:50px;
 }
 
-/* CONTAINER */
-
 .radar-container{
-    width:100%;
     display:flex;
     justify-content:center;
     align-items:center;
 }
-
-/* RADAR */
 
 .radar{
     position:relative;
@@ -289,7 +303,7 @@ section{
     height:560px;
 }
 
-/* CENTER */
+/* CORE */
 
 .radar-core{
     width:150px;
@@ -306,12 +320,10 @@ section{
     align-items:center;
     z-index:10;
     box-shadow:0 0 40px #7f5cff;
-    animation:pulse 3s infinite;
 }
 
 .radar-core i{
     font-size:40px;
-    color:white;
     margin-bottom:10px;
 }
 
@@ -335,10 +347,9 @@ section{
     left:50%;
     transform-origin:top left;
     animation:scan 4s linear infinite;
-    z-index:1;
 }
 
-/* SKILL NODES */
+/* SKILLS */
 
 .radar-skill{
     width:90px;
@@ -353,11 +364,10 @@ section{
     align-items:center;
     backdrop-filter:blur(20px);
     transition:0.4s;
-    z-index:5;
 }
 
 .radar-skill:hover{
-    transform:scale(1.15);
+    transform:scale(1.1);
     box-shadow:0 0 30px #7f5cff;
 }
 
@@ -373,341 +383,152 @@ section{
 
 /* POSITIONS */
 
-.s1{
-    top:80px;
-    left:280px;
-}
+.s1{top:80px;left:280px;}
+.s2{top:180px;right:90px;}
+.s3{top:300px;left:70px;}
+.s4{bottom:120px;left:180px;}
+.s5{bottom:70px;right:280px;}
+.s6{top:320px;right:70px;}
+.s7{top:170px;left:130px;}
+.s8{bottom:170px;right:130px;}
 
-.s2{
-    top:180px;
-    right:90px;
-}
-
-.s3{
-    top:300px;
-    left:70px;
-}
-
-.s4{
-    bottom:120px;
-    left:180px;
-}
-
-.s5{
-    bottom:70px;
-    right:280px;
-}
-
-.s6{
-    top:320px;
-    right:70px;
-}
-
-.s7{
-    top:170px;
-    left:130px;
-}
-
-.s8{
-    bottom:170px;
-    right:130px;
-}
-
-/* ANIMATIONS */
+/* ANIMATION */
 
 @keyframes scan{
-
     100%{
         transform:rotate(360deg);
     }
-
 }
 
-@keyframes pulse{
-
-    0%{
-        box-shadow:0 0 25px #7f5cff;
-    }
-
-    50%{
-        box-shadow:0 0 70px #7f5cff;
-    }
-
-    100%{
-        box-shadow:0 0 25px #7f5cff;
-    }
-
-}
-
-/* CARDS */
+/* =========================
+   SKILL CARDS
+========================= */
 
 .radar-cards{
-    margin-top:45px;
+    margin-top:30px;
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-    gap:35px;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
 }
 
 .radar-card{
     background:rgba(255,255,255,0.04);
     border:1px solid rgba(255,255,255,0.08);
-    border-radius:22px;
-    padding:20px;
+    border-radius:20px;
+    padding:14px;
     backdrop-filter:blur(20px);
-    transition:0.4s;
-}
-
-.radar-card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 0 40px rgba(127,92,255,0.2);
 }
 
 .radar-card h2{
-    font-size:22px;
-    margin-bottom:30px;
+    font-size:18px;
+    margin-bottom:18px;
     color:#9c7dff;
     font-family:'Cinzel',serif;
-}
-
-.radar-card h2 i{
-    margin-right:10px;
 }
 
 .radar-tags{
     display:flex;
     flex-wrap:wrap;
-    gap:18px;
+    gap:10px;
 }
 
 .radar-tags span{
-    padding:10px 16px;
-    border-radius:40px;
+    padding:7px 10px;
+    border-radius:30px;
     background:#111;
     border:1px solid rgba(255,255,255,0.08);
-    transition:0.3s;
-    cursor:pointer;
+    font-size:11px;
 }
 
-.radar-tags span:hover{
-    background:#7f5cff;
-    transform:scale(1.08);
-}
-
-/* MOBILE */
-
-@media(max-width:900px){
-
-.radar{
-    width:420px;
-    height:420px;
-    transform:scale(0.8);
-}
-
-.radar-core{
-    width:110px;
-    height:110px;
-}
-
-.radar-core h2{
-    font-size:13px;
-}
-
-.radar-skill{
-    width:65px;
-    height:65px;
-}
-
-.radar-skill i{
-    font-size:18px;
-}
-
-.radar-skill span{
-    font-size:8px;
-}
-
-.ring1{
-    width:150px;
-    height:150px;
-}
-
-.ring2{
-    width:260px;
-    height:260px;
-}
-
-.ring3{
-    width:360px;
-    height:360px;
-}
-
-}
-/* EDUCATION */
-
-/* EDUCATION SECTION */
-
-/* EDUCATION */
+/* =========================
+   EDUCATION
+========================= */
 
 .edu-subtitle{
     text-align:center;
     color:#bdbdbd;
-    margin-top:-20px;
-    margin-bottom:70px;
-    font-size:18px;
+    margin-bottom:50px;
 }
-
-/* CONTAINER */
 
 .floating-education{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-    gap:35px;
-}
-
-/* CARD */
-
-.edu-float-card{
-    background:rgba(255,255,255,0.04);
-    border:1px solid rgba(255,255,255,0.08);
-    border-radius:30px;
-    padding:22px 18px;
-    backdrop-filter:blur(20px);
-    position:relative;
-    overflow:hidden;
-    transition:0.5s ease;
-}
-
-/* TOP GLOW */
-
-.edu-float-card::before{
-    content:'';
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:3px;
-    background:linear-gradient(
-    90deg,
-    transparent,
-    #7f5cff,
-    transparent
-    );
-}
-
-/* HOVER */
-
-.edu-float-card:hover{
-    transform:translateY(-12px);
-    box-shadow:
-    0 0 40px rgba(127,92,255,0.15),
-    0 15px 50px rgba(0,0,0,0.4);
-}
-
-/* ICON */
-
-.edu-icon{
-    width:70px;
-    height:70px;
-    border-radius:20px;
-    background:rgba(127,92,255,0.12);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    margin-bottom:30px;
-}
-
-.edu-icon i{
-    font-size:30px;
-    color:#9c7dff;
-}
-
-/* TEXT */
-
-.edu-float-card h2{
-    font-size:26px;
-    line-height:1.4;
-    margin-bottom:12px;
-    font-family:'Cinzel',serif;
-    color:white;
-}
-
-.edu-float-card h3{
-    font-size:18px;
-    color:#9c7dff;
-    margin-bottom:12px;
-}
-
-.edu-float-card span{
-    display:inline-block;
-    margin-bottom:22px;
-    color:#bbbbbb;
-    font-size:14px;
-}
-
-.edu-float-card p{
-    color:#d4d4d4;
-    line-height:1.8;
-    margin-bottom:28px;
-    font-size:15px;
-}
-
-/* MARK */
-
-.edu-mark{
-    display:inline-block;
-    padding:12px 22px;
-    border-radius:40px;
-    background:#111;
-    border:1px solid rgba(127,92,255,0.25);
-    color:#9c7dff;
-    font-weight:600;
-    transition:0.3s;
-}
-
-.edu-mark:hover{
-    background:#7f5cff;
-    color:white;
-}
-
-/* MOBILE */
-
-@media(max-width:900px){
-
-.floating-education{
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
     gap:25px;
 }
 
 .edu-float-card{
-    padding:32px 28px;
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:25px;
+    padding:24px 20px;
+    backdrop-filter:blur(20px);
+    transition:0.4s;
+}
+
+.edu-float-card:hover{
+    transform:translateY(-8px);
+}
+
+.edu-icon{
+    width:60px;
+    height:60px;
+    border-radius:18px;
+    background:rgba(127,92,255,0.12);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.edu-icon i{
+    font-size:26px;
+    color:#9c7dff;
 }
 
 .edu-float-card h2{
     font-size:22px;
+    margin-bottom:10px;
+}
+
+.edu-float-card h3{
+    font-size:17px;
+    color:#9c7dff;
+    margin-bottom:10px;
 }
 
 .edu-float-card p{
     font-size:14px;
+    line-height:1.7;
 }
 
+.edu-mark{
+    display:inline-block;
+    margin-top:20px;
+    padding:10px 18px;
+    border-radius:30px;
+    background:#111;
+    color:#9c7dff;
+    border:1px solid rgba(127,92,255,0.25);
 }
-/* CERTIFICATES */
+
+/* =========================
+   GALLERY
+========================= */
 
 .gallery{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:30px;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
 }
 
 .gallery img{
     width:100%;
     border-radius:20px;
-    transition:0.4s;
 }
 
-.gallery img:hover{
-    transform:scale(1.05);
-}
-
-/* CONTACT */
+/* =========================
+   CONTACT
+========================= */
 
 .contact{
     text-align:center;
@@ -721,43 +542,41 @@ section{
 }
 
 .socials a{
-    width:70px;
-    height:70px;
+    width:65px;
+    height:65px;
     border-radius:50%;
     display:flex;
     justify-content:center;
     align-items:center;
     background:rgba(255,255,255,0.05);
-    font-size:28px;
+    font-size:26px;
     color:white;
     text-decoration:none;
-    transition:0.4s;
 }
 
-.socials a:hover{
-    background:#7f5cff;
-    transform:translateY(-10px);
-}
+/* =========================
+   CHAT
+========================= */
+
 .chat-toggle{
     position:fixed;
     bottom:30px;
     right:30px;
-    width:70px;
-    height:70px;
+    width:65px;
+    height:65px;
     background:#7f5cff;
     border-radius:50%;
     display:flex;
     justify-content:center;
     align-items:center;
-    font-size:28px;
-    cursor:pointer;
+    font-size:26px;
     z-index:1000;
     box-shadow:0 0 25px #7f5cff;
 }
 
 .chat-box{
     position:fixed;
-    bottom:120px;
+    bottom:110px;
     right:30px;
     width:340px;
     height:500px;
@@ -767,12 +586,11 @@ section{
     display:none;
     flex-direction:column;
     z-index:1000;
-    border:1px solid rgba(255,255,255,0.1);
 }
 
 .chat-header{
     background:#7f5cff;
-    padding:20px;
+    padding:18px;
     text-align:center;
     font-weight:bold;
 }
@@ -781,24 +599,6 @@ section{
     flex:1;
     padding:20px;
     overflow-y:auto;
-}
-
-.bot-message,
-.user-message{
-    padding:12px 18px;
-    margin-bottom:15px;
-    border-radius:20px;
-    width:fit-content;
-    max-width:80%;
-}
-
-.bot-message{
-    background:#222;
-}
-
-.user-message{
-    background:#7f5cff;
-    margin-left:auto;
 }
 
 .chat-input-area{
@@ -824,9 +624,11 @@ section{
     border-radius:15px;
     background:#7f5cff;
     color:white;
-    cursor:pointer;
 }
-/* FOOTER */
+
+/* =========================
+   FOOTER
+========================= */
 
 footer{
     padding:30px;
@@ -835,77 +637,64 @@ footer{
 }
 
 /* =========================
-   RESPONSIVE DESIGN
+   MOBILE
 ========================= */
 
-html,body{
-    overflow-x:hidden;
-}
-
 @media(max-width:900px){
+
+/* HIDE NAVBAR */
+
 nav{
     display:none;
 }
 
+/* HERO */
+
 .hero{
-    padding:140px 5% 60px;
+    padding:80px 5% 40px;
 }
 
 .hero-content{
     flex-direction:column;
     text-align:center;
-    gap:40px;
+    gap:35px;
 }
 
 .left h1{
-    font-size:42px;
-    line-height:1.2;
+    font-size:34px;
+    line-height:1.3;
 }
 
 .left p{
     font-size:15px;
     line-height:1.7;
-    padding:0 10px;
 }
 
-/* BUTTONS */
-
 .buttons{
-    display:flex;
     flex-direction:column;
     align-items:center;
-    gap:15px;
 }
 
 .btn{
-    width:80%;
+    width:85%;
     text-align:center;
-    padding:14px 20px;
 }
-
-/* PROFILE IMAGE */
 
 .profile-card{
-    width:260px;
-    height:340px;
+    width:240px;
+    height:320px;
 }
 
-/* SECTION */
-
-section{
-    padding:70px 5%;
-}
+/* TITLES */
 
 .title{
-    font-size:36px;
-    margin-bottom:40px;
+    font-size:34px;
 }
 
 /* ABOUT */
 
 .about-box{
     grid-template-columns:1fr;
-    gap:25px;
 }
 
 .glass{
@@ -914,14 +703,9 @@ section{
 
 /* RADAR */
 
-.radar-container{
-    overflow:hidden;
-}
-
 .radar{
     width:320px;
     height:320px;
-    transform:scale(0.85);
 }
 
 .radar-core{
@@ -934,7 +718,7 @@ section{
 }
 
 .radar-core i{
-    font-size:24px;
+    font-size:22px;
 }
 
 .radar-skill{
@@ -944,7 +728,6 @@ section{
 
 .radar-skill i{
     font-size:14px;
-    margin-bottom:3px;
 }
 
 .radar-skill span{
@@ -966,80 +749,58 @@ section{
     height:300px;
 }
 
-/* RADAR POSITIONS */
+/* MOBILE SKILL POSITIONS */
 
-.s1{
-    top:30px;
-    left:135px;
+.s1{top:30px;left:135px;}
+.s2{top:80px;right:25px;}
+.s3{top:150px;left:10px;}
+.s4{bottom:60px;left:60px;}
+.s5{bottom:30px;right:120px;}
+.s6{top:150px;right:10px;}
+.s7{top:80px;left:25px;}
+.s8{bottom:80px;right:35px;}
+
+/* SKILL CARDS */
+
+.radar-cards{
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
 }
 
-.s2{
-    top:80px;
-    right:25px;
+.radar-card{
+    padding:12px;
 }
 
-.s3{
-    top:150px;
-    left:10px;
+.radar-card h2{
+    font-size:14px;
 }
 
-.s4{
-    bottom:60px;
-    left:60px;
-}
-
-.s5{
-    bottom:30px;
-    right:120px;
-}
-
-.s6{
-    top:150px;
-    right:10px;
-}
-
-.s7{
-    top:80px;
-    left:25px;
-}
-
-.s8{
-    bottom:80px;
-    right:35px;
+.radar-tags span{
+    font-size:10px;
+    padding:6px 8px;
 }
 
 /* EDUCATION */
 
 .floating-education{
     grid-template-columns:1fr;
-    gap:25px;
 }
 
 .edu-float-card{
-    padding:28px 24px;
+    padding:22px 18px;
 }
 
 .edu-float-card h2{
-    font-size:22px;
+    font-size:20px;
 }
 
-/* CERTIFICATES */
+/* GALLERY */
 
 .gallery{
     grid-template-columns:1fr;
 }
 
-.gallery img{
-    width:100%;
-    height:auto;
-}
-
 /* CONTACT */
-
-.socials{
-    flex-wrap:wrap;
-    gap:18px;
-}
 
 .socials a{
     width:55px;
@@ -1047,25 +808,12 @@ section{
     font-size:22px;
 }
 
-/* CHATBOX */
+/* CHAT */
 
 .chat-box{
     width:90%;
     right:5%;
     height:450px;
-}
-
-.chat-toggle{
-    width:60px;
-    height:60px;
-    font-size:24px;
-}
-
-/* FOOTER */
-
-footer{
-    font-size:14px;
-    padding:25px 10px;
 }
 
 }
@@ -1100,13 +848,13 @@ footer{
 
 <div class="left">
 
-<h1>
+<h1>SHAJANA.S,
 Electronics <br>
 <span>& Communication</span> Engineer
 </h1>
 
 <p>
-Third year ECE student passionate about Embedded Systems,
+Hello everyone I am SHAJANA.S,third year ECE student passionate about Embedded Systems,
 IoT, PCB Design, AI tools and modern technology.
 Actively participating in Hackathons, Symposiums and Technical Events.
 </p>
