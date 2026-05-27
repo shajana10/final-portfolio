@@ -834,13 +834,12 @@ footer{
     color:#888;
 }
 
-/* RESPONSIVE */
 /* =========================
    RESPONSIVE DESIGN
 ========================= */
 
-html, body{
-    overflow-x: hidden;
+html,body{
+    overflow-x:hidden;
 }
 
 @media(max-width:900px){
@@ -848,14 +847,21 @@ html, body{
 /* NAVBAR */
 
 nav{
-    padding: 15px 5%;
+    padding:15px 5%;
+    flex-direction:column;
+    gap:15px;
+}
+
+.logo{
+    font-size:22px;
+    text-align:center;
 }
 
 nav ul{
     display:flex;
     flex-direction:column;
     align-items:center;
-    gap:15px;
+    gap:12px;
     padding:0;
 }
 
@@ -864,15 +870,19 @@ nav ul li{
 }
 
 nav ul li a{
-    font-size:18px;
+    font-size:16px;
 }
 
-/* HERO SECTION */
+/* HERO */
+
+.hero{
+    padding:140px 5% 60px;
+}
 
 .hero-content{
     flex-direction:column;
     text-align:center;
-    gap:30px;
+    gap:40px;
 }
 
 .left h1{
@@ -881,7 +891,8 @@ nav ul li a{
 }
 
 .left p{
-    font-size:16px;
+    font-size:15px;
+    line-height:1.7;
     padding:0 10px;
 }
 
@@ -897,69 +908,193 @@ nav ul li a{
 .btn{
     width:80%;
     text-align:center;
+    padding:14px 20px;
 }
 
-/* IMAGE */
+/* PROFILE IMAGE */
 
-.profile-img img,
-.right img{
-    width:220px;
-    height:auto;
+.profile-card{
+    width:260px;
+    height:340px;
+}
+
+/* SECTION */
+
+section{
+    padding:70px 5%;
+}
+
+.title{
+    font-size:36px;
+    margin-bottom:40px;
 }
 
 /* ABOUT */
 
 .about-box{
     grid-template-columns:1fr;
+    gap:25px;
 }
 
-/* EDUCATION TIMELINE */
+.glass{
+    padding:25px;
+}
 
-.timeline::before{
+/* RADAR */
+
+.radar-container{
+    overflow:hidden;
+}
+
+.radar{
+    width:320px;
+    height:320px;
+    transform:scale(0.85);
+}
+
+.radar-core{
+    width:90px;
+    height:90px;
+}
+
+.radar-core h2{
+    font-size:16px;
+}
+
+.radar-core i{
+    font-size:24px;
+}
+
+.radar-skill{
+    width:50px;
+    height:50px;
+}
+
+.radar-skill i{
+    font-size:14px;
+    margin-bottom:3px;
+}
+
+.radar-skill span{
+    font-size:6px;
+}
+
+.ring1{
+    width:120px;
+    height:120px;
+}
+
+.ring2{
+    width:210px;
+    height:210px;
+}
+
+.ring3{
+    width:300px;
+    height:300px;
+}
+
+/* RADAR POSITIONS */
+
+.s1{
+    top:30px;
+    left:135px;
+}
+
+.s2{
+    top:80px;
+    right:25px;
+}
+
+.s3{
+    top:150px;
     left:10px;
 }
 
-.timeline-item{
-    width:100%;
-    left:0 !important;
-    padding-left:40px;
-    padding-right:10px;
+.s4{
+    bottom:60px;
+    left:60px;
 }
 
-/* CARDS */
+.s5{
+    bottom:30px;
+    right:120px;
+}
 
-.skills-container,
-.project-container,
-.certificate-container{
+.s6{
+    top:150px;
+    right:10px;
+}
+
+.s7{
+    top:80px;
+    left:25px;
+}
+
+.s8{
+    bottom:80px;
+    right:35px;
+}
+
+/* EDUCATION */
+
+.floating-education{
+    grid-template-columns:1fr;
+    gap:25px;
+}
+
+.edu-float-card{
+    padding:28px 24px;
+}
+
+.edu-float-card h2{
+    font-size:22px;
+}
+
+/* CERTIFICATES */
+
+.gallery{
     grid-template-columns:1fr;
 }
-
-/* SECTION SPACING */
-
-section{
-    padding:70px 5%;
-}
-
-/* TEXT */
-
-h2{
-    font-size:32px;
-    text-align:center;
-}
-
-p{
-    font-size:15px;
-}
-
-/* GALLERY */
 
 .gallery img{
     width:100%;
     height:auto;
 }
 
+/* CONTACT */
+
+.socials{
+    flex-wrap:wrap;
+    gap:18px;
 }
 
+.socials a{
+    width:55px;
+    height:55px;
+    font-size:22px;
+}
+
+/* CHATBOX */
+
+.chat-box{
+    width:90%;
+    right:5%;
+    height:450px;
+}
+
+.chat-toggle{
+    width:60px;
+    height:60px;
+    font-size:24px;
+}
+
+/* FOOTER */
+
+footer{
+    font-size:14px;
+    padding:25px 10px;
+}
 
 }
 </style>
